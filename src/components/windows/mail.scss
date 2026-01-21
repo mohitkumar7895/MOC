@@ -1,0 +1,154 @@
+.mail-container {
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #0a0a0a;
+}
+
+.mail-content {
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-y: auto;
+
+  .mail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+
+    h1 {
+      color: rgb(245, 245, 245);
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .mail-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(135deg, #ea4335 0%, #c5221f 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 0.5rem;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 10px rgba(234, 67, 53, 0.3);
+
+      &:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 15px rgba(234, 67, 53, 0.5);
+      }
+
+      span:first-child {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  .compose-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    flex: 1;
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      label {
+        color: rgb(245, 245, 245);
+        font-size: 0.95rem;
+        font-weight: 500;
+      }
+
+      input,
+      textarea {
+        padding: 0.75rem;
+        background-color: #1a1a1a;
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        border-radius: 0.5rem;
+        color: rgb(245, 245, 245);
+        font-size: 1rem;
+        font-family: inherit;
+        transition: all 0.3s ease;
+
+        &:focus {
+          outline: none;
+          border-color: #667eea;
+          box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        &::placeholder {
+          color: rgb(168, 168, 168);
+          opacity: 0.6;
+        }
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 200px;
+        font-family: inherit;
+      }
+    }
+
+    .form-actions {
+      display: flex;
+      gap: 1rem;
+      margin-top: 0.5rem;
+
+      .send-button,
+      .clear-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        border-radius: 0.75rem;
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-family: inherit;
+      }
+
+      .send-button {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        &:active {
+          transform: translateY(0);
+        }
+
+        span:first-child {
+          font-size: 1.3rem;
+        }
+      }
+
+      .clear-button {
+        background-color: #2a2a2a;
+        color: rgb(245, 245, 245);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+
+        &:hover {
+          background-color: #3a3a3a;
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
+

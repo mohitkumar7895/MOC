@@ -4,9 +4,9 @@ import "./resume.scss"
 
 const Resume = ({ windowName, setWindowsState }) => {
     return (
-        <MacWindow windowName={windowName} setWindowsState={setWindowsState} >
+        <MacWindow windowName={windowName} setWindowsState={setWindowsState} width="60vw" height="80vh">
             <div className="resume-window">
-                <embed src="/resume.pdf" frameborder="0"></embed>
+                <embed src="/Resume.pdf" type="application/pdf" />
             </div>
         </MacWindow>
     )

@@ -18,10 +18,9 @@ const TECH_STACK = {
   backend: [
     "Node.js",     // 90%
     "PostgreSQL",  // 85%
-    "Redis",       // 75%
-    "Docker",      // 80%
+  
   ],
-  tools: ["AWS", "Git", "Figma", "Linux"]
+  tools: ["AWS", "Git"]
 };
 
 // --------------------------------------------------

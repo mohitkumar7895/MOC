@@ -60,6 +60,20 @@
     background: linear-gradient(to bottom, rgb(163, 97, 170), rgb(142, 33, 150));
   }
 
+  .portfolio {
+    background: linear-gradient(to bottom, rgb(102, 126, 234), rgb(118, 75, 162));
+    cursor: pointer;
+  }
+
+  .cli {
+    background: linear-gradient(to bottom, rgb(40, 40, 40), rgb(20, 20, 20));
+    cursor: pointer;
+  }
+
+  .icon {
+    cursor: pointer;
+  }
+
   /* MAIN HOVER */
   .icon:hover {
     transform: scale(1.25) translateY(-20%);

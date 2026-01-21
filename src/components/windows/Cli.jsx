@@ -8,48 +8,49 @@ const Cli = ({ windowName, setWindowsState }) => {
         about: {
             description: 'About me',
             usage: 'about',
-            fn: () => 'I am a full-stack web developer passionate about building modern web applications with React, Node.js, and cloud technologies.'
+            fn: () => "I am a passionate Frontend Developer with strong full-stack exposure, specializing in building modern, responsive, and high-performance web applications. I have hands-on experience in frontend UI development, API integration, and backend services, with a clear focus on clean code, scalability, and user experience."
         },
         skills: {
             description: 'List technical skills',
             usage: 'skills',
-            fn: () => `Frontend: React, Vue.js, Vanilla JS, Sass, HTML/CSS
-Backend: Node.js, Express
-Databases: MongoDB,  MySQL
-Tools: Git,  Webpack, Vite`
+            fn: () => `Frontend: HTML, CSS, JavaScript, React.js, Redux, Redux Toolkit, Tailwind CSS, Styled-components, React Router, Axios
+Backend: Node.js, Express.js, GraphQL
+Database: MySQL, MongoDB
+Tools: Git, GitHub, VS Code, Postman, Nodemon, npm, MongoDB Compass, Mongo Shell
+Areas of Interest: Frontend Design, API Development, Responsive Web Design`
         },
         projects: {
             description: 'View my projects',
             usage: 'projects',
             fn: () => `1. Portfolio Website - React + Vite
-2. E-commerce Platform - MERN Stack
-3. Task Management App - Next.js
-4. Real-time Chat App - Socket.io
-5. Data Dashboard - React + Chart.js`
+                        2. E-commerce Platform - MERN Stack
+                         3. Hotel Management - React.js
+                         4. Jan Seva Kendra  - Next.js
+                          5. Data Dashboard - React + Chart.js`
         },
         experience: {
-            description: 'Display work experience',
+            description: 'seclance',
             usage: 'experience',
-            fn: () => `Senior Developer @ Tech Corp (2022 - Present)
-  - Led development of 5+ React applications
-  - Mentored junior developers
+            fn: () => `Web Developer (2026 - Present)
+  
+  - Mernstack junior developers
 
-Full Stack Developer @ Web Solutions (2020 - 2022)
+Web Developer @ Web Solutions (2025 - 2026)
   - Built scalable APIs with Node.js
   - Designed responsive UIs with React`
         },
         contact: {
             description: 'Get contact information',
             usage: 'contact',
-            fn: () => `Email: ankur@example.com
-Phone: +1 (555) 123-4567
-Location: San Francisco, CA`
+            fn: () => `Email: mohitporwal596@gmail.com
+Phone: 7895094129
+Location: Agra`
         },
         github: {
             description: 'Open GitHub profile',
             usage: 'github',
             fn: () => {
-                window.open('https://github.com', '_blank')
+                window.open('https://github.com/mohitkumar7895', '_blank')
                 return 'Opening GitHub...'
             }
         },
@@ -61,9 +62,9 @@ Location: San Francisco, CA`
         social: {
             description: 'View social media links',
             usage: 'social',
-            fn: () => `Twitter: @ankurdev
-LinkedIn: /in/ankurprajapati
-Portfolio: ankurprajapati.dev`
+            fn: () => `
+LinkedIn: /in/https://www.linkedin.com/in/mohit-kumar7895/
+Portfolio: https://mohitkumar-nextjs-portfolio-website-seven.vercel.app/`
         },
         echo: {
             description: 'Echo a passed string',
@@ -95,7 +96,7 @@ Happy exploring! 🚀
                 <Terminal
                     commands={commands}
                     welcomeMessage={welcomeMessage}
-                    promptLabel={'ankurprajapati:~$'}
+                    promptLabel={'mohitkumar:~$'}
                     promptLabelStyle={{ color: '#00ff00' }}
                 />
             </div>
