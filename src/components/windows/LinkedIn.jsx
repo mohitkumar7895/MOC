@@ -20,7 +20,7 @@ const LinkedIn = ({ windowName, setWindowsState }) => {
   }, [])
 
   return (
-    <MacWindow windowName={windowName} setWindowsState={setWindowsState} width="60vw" height="75vh">
+    <MacWindow windowName={windowName} setWindowsState={setWindowsState}>
       <div className="linkedin-container">
         <div className="linkedin-content">
           <h1>LinkedIn Profile</h1>

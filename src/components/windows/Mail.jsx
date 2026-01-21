@@ -14,7 +14,7 @@ const Mail = ({ windowName, setWindowsState }) => {
   }
 
   return (
-    <MacWindow windowName={windowName} setWindowsState={setWindowsState} width="60vw" height="75vh">
+    <MacWindow windowName={windowName} setWindowsState={setWindowsState}>
       <div className="mail-container">
         <div className="mail-content">
           <div className="mail-header">

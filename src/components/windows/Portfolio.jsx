@@ -4,7 +4,7 @@ import "./portfolio.scss"
 
 const Portfolio = ({ windowName, setWindowsState }) => {
   return (
-    <MacWindow windowName={windowName} setWindowsState={setWindowsState} width="60vw" height="70vh">
+    <MacWindow windowName={windowName} setWindowsState={setWindowsState}>
       <div className="portfolio-container">
         <div className="portfolio-content">
           <h1>My Portfolio Website</h1>
