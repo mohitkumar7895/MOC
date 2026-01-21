@@ -86,3 +86,34 @@
     transform: scale(1.1) translateY(-10%);
   }
 }
+
+// Mobile responsive styles
+@media (max-width: 767px) {
+  .dock {
+    gap: 0.5rem;
+    padding-inline: 0.75rem;
+    padding-block: 0.5rem;
+    bottom: 0.5rem;
+    border-radius: 0.5rem;
+
+    .icon {
+      width: 2.2rem;
+      padding: 0.4rem;
+      border-radius: 0.4rem;
+
+      img {
+        border-radius: 0.3rem;
+      }
+    }
+
+    // Reduce hover effect on mobile
+    .icon:hover {
+      transform: scale(1.1) translateY(-10%);
+    }
+
+    .icon:hover + .icon,
+    .icon:has(+ .icon:hover) {
+      transform: scale(1.05) translateY(-5%);
+    }
+  }
+}

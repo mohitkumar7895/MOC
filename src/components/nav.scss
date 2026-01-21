@@ -43,3 +43,36 @@
     }
   }
 }
+
+// Mobile responsive styles
+@media (max-width: 767px) {
+  .nav {
+    height: 1.8rem;
+    padding-inline: 0.5rem;
+
+    p {
+      font-size: 0.7rem;
+    }
+
+    .left,
+    .right {
+      gap: 0.5rem;
+    }
+
+    .apple-icon img,
+    .nav-icon img {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+
+    .nav-item {
+      padding: 0.15rem 0.3rem;
+      border-radius: 0.2rem;
+    }
+
+    // Hide some nav items on very small screens if needed
+    .left .nav-item:nth-child(n+4) {
+      display: none;
+    }
+  }
+}
